@@ -7,6 +7,8 @@ import {
   Brain,
   Users,
   CheckCircle,
+  Mail,
+  Phone,
 } from "lucide-react";
 
 export default function Component() {
@@ -128,7 +130,7 @@ export default function Component() {
           className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
         >
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
+            <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Get in Touch
@@ -138,19 +140,32 @@ export default function Component() {
                   solutions? Contact us today!
                 </p>
               </div>
-              <div className="w-full max-w-sm space-y-2">
-                <form className="flex flex-col gap-2">
-                  <Input type="email" placeholder="Enter your email" />
-                  <Button type="submit">Contact Us</Button>
-                </form>
+              <div className="w-full max-w-md space-y-4">
+                <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                  <h3 className="text-xl font-semibold mb-4">
+                    Contact Information
+                  </h3>
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex items-center">
+                      <Mail className="h-5 w-5 text-primary mr-2" />
+                      <p className="text-gray-600 dark:text-gray-300">
+                        info@mmbytesolutions.com
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <Phone className="h-5 w-5 text-primary mr-2" />
+                      <p className="text-gray-600 dark:text-gray-300">
+                        +1 (720) 432-9393
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col items-center gap-2 min-[400px]:flex-row">
+              <div className="flex flex-col items-center gap-4">
                 <p className="text-gray-500 dark:text-gray-400">
-                  info@mmbytes.com
+                  We&apos;ll get back to you within 24 hours.
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">
-                  +1 (555) 123-4567
-                </p>
+                <Button>Schedule a Consultation</Button>
               </div>
             </div>
           </div>
